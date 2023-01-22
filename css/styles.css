@@ -31,6 +31,14 @@ a {
     margin: 3rem auto 3rem auto;
 }
 
+.index-cards-principales-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
 .logo-footer {
     width: 90px;
     height: 84px;
