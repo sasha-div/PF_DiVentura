@@ -36,17 +36,17 @@ a {
 
 .index-texto-descriptivo {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-size: x-large;
     font-weight: bolder;
     text-align: center;
-    margin: 5rem auto;
+    margin: 10rem auto;
 }
 
 .index-texto-descriptivo-hr {
     border: 1px solid black;
     border-radius: 5px;
     width: 50%;
-    margin: 3rem auto 5rem auto;
+    margin: 10rem auto 10rem auto;
 }
 
 .index-cards-principales-productos {
