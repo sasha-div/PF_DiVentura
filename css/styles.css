@@ -11,12 +11,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.contactanos {
-    background-color: white;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-
 img {
     max-width: 100%;
 }
@@ -30,6 +24,15 @@ a {
     text-decoration: none;
     color: cornflowerblue;
 }
+
+/* Indicaciones Responsive (Media querys) */
+.padre-cards-grupo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 
 /* Botón search del header */
 .btn-outline-success {
@@ -50,7 +53,9 @@ a {
 }
 
 
-/* Estilos en body para el index */
+/* Estilos en body para el Index */
+
+
 
 .nav-link {
     font-size: large;
@@ -87,6 +92,8 @@ a {
     gap: 2rem;
 }
 
+/* Botones de Cards en Lentes de sol, ópticos y accesorios */
+
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #740bba;
@@ -103,6 +110,17 @@ a {
     --bs-btn-disabled-bg: #30034e;
     --bs-btn-disabled-border-color: #30034e;
 }
+
+/* Estilos de Contáctanos */
+
+.contactanos {
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Estilos de Footer */
 
 .logo-footer {
     width: 90px;
