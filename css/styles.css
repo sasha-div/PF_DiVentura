@@ -6,9 +6,16 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #eaeaea;
+    color: black;
     font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 img {
@@ -41,9 +48,7 @@ FIRST MOBILE */
     gap: 20px;
 }
 
-
-
-/* Indicaciones Responsive (Media queries)
+/* Indicaciones Responsive (Media queries) - Solo en páginas "Lentes ópticos, Lentes de sol y Accesorios
 TABLET */
 @media (min-width: 768px) {
     .padre-cards-grupo1 {
@@ -59,7 +64,7 @@ TABLET */
     }
 }
 
-/* Indicaciones Responsive (Media queries)
+/* Indicaciones Responsive (Media queries) - Solo en páginas "Lentes ópticos, Lentes de sol y Accesorios
 DESKTOP */
 @media (min-width: 992px) {
     .padre-cards-grupo1 {
@@ -72,6 +77,24 @@ DESKTOP */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
+    }
+}
+
+/* Indicaciones Responsive (Media queries) - Solo en páginas "Lentes ópticos, Lentes de sol y Accesorios
+DESKTOP GRANDES*/
+@media (min-width: 1200px) {
+    .padre-cards-grupo1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2;
+    }
+
+    .padre-cards-grupo2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2;
     }
 }
 
@@ -160,6 +183,15 @@ DESKTOP */
     background-color: white;
     color: black;
     font-family: 'Montserrat', sans-serif;
+}
+
+.h2-contactanos {
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #740bba;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
 
