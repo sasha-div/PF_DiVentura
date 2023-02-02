@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: #FFFBF5;
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,6 +32,12 @@ a {
     color: cornflowerblue;
 }
 
+.navbar {
+    background-color: #F7EFE5;
+}
+
+
+
 /* Indicaciones Responsive (Media queries)
 FIRST MOBILE */
 .padre-cards-grupo1 {
@@ -48,6 +54,11 @@ FIRST MOBILE */
     gap: 20px;
 }
 
+.pre-header {
+    display: none;
+}
+
+
 /* Indicaciones Responsive (Media queries) - Solo en páginas "Lentes ópticos, Lentes de sol y Accesorios
 TABLET */
 @media (min-width: 768px) {
@@ -62,6 +73,16 @@ TABLET */
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+
+    .pre-header {
+        display: flex;
+    }
+
+    .menu-item-login-noshow,
+    .menu-item-shopping-noshow {
+        display: none;
+    }
+
 }
 
 /* Indicaciones Responsive (Media queries) - Solo en páginas "Lentes ópticos, Lentes de sol y Accesorios
@@ -78,6 +99,17 @@ DESKTOP */
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
+
+    .pre-header {
+        display: flex;
+    }
+
+    .menu-item-login-noshow,
+    .menu-item-shopping-noshow {
+        display: none;
+    }
+
+
 }
 
 /* Indicaciones Responsive (Media queries) - Solo en páginas "Lentes ópticos, Lentes de sol y Accesorios
@@ -96,6 +128,16 @@ DESKTOP GRANDES*/
         flex-wrap: wrap;
         gap: 2;
     }
+
+    .pre-header {
+        visibility: visible;
+    }
+
+    .menu-item-login-noshow,
+    .menu-item-shopping-noshow {
+        display: none;
+    }
+
 }
 
 /* Botón search del header */
@@ -130,7 +172,7 @@ DESKTOP GRANDES*/
 /* Aplicación de Transición en la clase nav-link (Bootstrap) del navbar */
 
 .nav-link:hover {
-    background-color: #eaeaea;
+    background-color: #C3ACD0;
     border-radius: 5px;
     padding: 5px;
 }
@@ -141,6 +183,7 @@ DESKTOP GRANDES*/
     font-weight: bolder;
     text-align: center;
     margin: 10rem auto;
+    background-color: #F7EFE5;
 }
 
 .index-texto-descriptivo-hr {
