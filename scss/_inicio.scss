@@ -17,6 +17,11 @@
     margin: $espacioXXGrande auto $espacioXXGrande auto;
 }
 
+.strong-inicio {
+    font-weight: bold;
+    color: $color-primario;
+}
+
 .index-cards-principales-productos {
     @include flex-columna;
 }

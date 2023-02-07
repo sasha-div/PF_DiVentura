@@ -1,3 +1,9 @@
 .contactanos {
     @include bg-white;
 }
+
+.banners-contactanos {
+    background-color: $color-primario;
+    color: white;
+    margin: $espacioXGrande auto;
+}
