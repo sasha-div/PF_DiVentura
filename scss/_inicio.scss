@@ -1,0 +1,40 @@
+.index-texto-descriptivo {
+    font-family: $fuentePrincipal;
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.banners-inicio {
+    background-color: $color-secundario;
+    margin: $espacioXGrande auto;
+}
+
+.index-texto-descriptivo-hr {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    margin: $espacioXXGrande auto $espacioXXGrande auto;
+}
+
+.index-cards-principales-productos {
+    @include flex-columna;
+}
+
+@media (min-width: $tablet) {
+    .index-cards-principales-productos {
+        @include flex-fila;
+    }
+}
+
+@media (min-width: $desktop) {
+    .index-cards-principales-productos {
+        @include flex-fila;
+    }
+}
+
+@media (min-width: $desktopXL) {
+    .index-cards-principales-productos {
+        @include flex-fila;
+    }
+}

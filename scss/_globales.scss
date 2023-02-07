@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fuentePrincipal;
+    background-color: $color-terciario;
+    color: black;
+}
+
+h1 {
+    font-family: $fuentePrincipal;
+    margin-top: $espacioXGrande;
+    margin-bottom: $espacioXGrande;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: $fuentePrincipal;
+    padding-top: $espacioXGrande;
+    padding-bottom: $espacioXGrande;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+h5 {
+    font-family: $fuentePrincipal;
+    padding-top: $espacioMedio;
+    padding-bottom: $espacioChico;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+// Estilos para el HEADER
+
+.pre-header {
+    display: $invisible;
+
+    .header-texto-promo {
+        font-size: small;
+    }
+}
+
+.navbar {
+    background-color: $color-secundario;
+}
+
+.nav-link {
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    transition: all .5s;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #740bba;
+    --bs-btn-border-color: #740bba;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #510583;
+    --bs-btn-hover-border-color: #510583;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #740bba;
+    --bs-btn-active-border-color: #740bba;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #30034e;
+    --bs-btn-disabled-border-color: #30034e;
+}
+
+// Estilo compartidos para las cards de productos
+
+.padre-cards-grupo1,
+.padre-cards-grupo2 {
+    @include flex-columna;
+}
+
+.card {
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+    }
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #740bba;
+    --bs-btn-border-color: #740bba;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #510583;
+    --bs-btn-hover-border-color: #510583;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #740bba;
+    --bs-btn-active-border-color: #740bba;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #30034e;
+    --bs-btn-disabled-border-color: #30034e;
+}
+
+
+// Estilos CARRUSELES
+.carousel-item img {
+    height: 400px;
+}
+
+// Estilos para el FOOTER
+
+.logo-footer {
+    width: 150px;
+    height: 144px;
+    padding-bottom: $espacioMedio;
+}
+
+
+// MEDIA QUERIES
+
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 70vh;
+    }
+
+    .padre-cards-grupo1,
+    .padre-cards-grupo2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .pre-header {
+        display: $visible;
+    }
+
+    .menu-item-login-noshow,
+    .menu-item-shopping-noshow {
+        display: none;
+    }
+}
+
+
+@media (min-width: $desktop) {
+    .carousel-item img {
+        height: 100vh;
+    }
+
+    .padre-cards-grupo1,
+    .padre-cards-grupo2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .pre-header {
+        display: $visible;
+    }
+
+    .menu-item-login-noshow,
+    .menu-item-shopping-noshow {
+        display: none;
+    }
+}
+
+@media (min-width: $desktopXL) {
+
+    .padre-cards-grupo1,
+    .padre-cards-grupo2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2;
+    }
+
+    .pre-header {
+        display: $visible;
+    }
+
+    .menu-item-login-noshow,
+    .menu-item-shopping-noshow {
+        display: $invisible;
+    }
+}
+
+// Keyframes | Parpadeo
+.keyframe-textos {
+    animation-name: parpadeo;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 2;
+    }
+
+}
