@@ -41,3 +41,9 @@ $invisible: none;
     justify-content: center;
     gap: 2rem;
 }
+
+@mixin bg-white {
+    background-color: white;
+    color: black;
+    font-family: $fuentePrincipal;
+}
