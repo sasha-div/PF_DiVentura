@@ -26,20 +26,31 @@
     @include flex-columna;
 }
 
+@media (min-width: $tablet) {}
+
+.carousel-item img {
+    height: 240px;
+}
+
+
 @media (min-width: $tablet) {
     .index-cards-principales-productos {
         @include flex-fila;
     }
+
+    .carousel-item img {
+        height: 70vh;
+    }
 }
 
 @media (min-width: $desktop) {
-    .index-cards-principales-productos {
-        @include flex-fila;
+    .carousel-item img {
+        height: 100vh;
     }
 }
 
 @media (min-width: $desktopXL) {
-    .index-cards-principales-productos {
-        @include flex-fila;
+    .carousel-item img {
+        height: 120vh;
     }
 }

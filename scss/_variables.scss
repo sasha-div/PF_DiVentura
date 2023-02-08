@@ -42,6 +42,11 @@ $invisible: none;
     gap: 2rem;
 }
 
+@mixin grid-center {
+    display: grid;
+    justify-items: center;
+}
+
 @mixin bg-white {
     background-color: white;
     color: black;

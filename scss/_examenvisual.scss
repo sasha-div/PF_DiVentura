@@ -2,11 +2,11 @@
     @include bg-white;
 
     .container-examenvisual {
-        --bs-gutter-x: 1.5rem;
+        --bs-gutter-x: $espacioGrande;
         --bs-gutter-y: 0;
         width: 100%;
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding-right: $espacioXGrande;
+        padding-left: $espacioXGrande;
         margin-right: auto;
         margin-left: auto;
     }

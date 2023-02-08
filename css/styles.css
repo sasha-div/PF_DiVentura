@@ -72,14 +72,11 @@ a {
   --bs-btn-disabled-bg: #30034e;
   --bs-btn-disabled-border-color: #30034e; }
 
-.carousel-item img {
-  height: 240px; }
-
 .padre-cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  gap: 2rem; }
   .padre-cards .card {
     transition: all .5s; }
     .padre-cards .card:hover {
@@ -113,38 +110,18 @@ a {
   .menu-item-login-noshow,
   .menu-item-shopping-noshow {
     display: none; }
-  .carousel-item img {
-    height: 70vh; }
   .padre-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center; } }
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (min-width: 992px) {
-  .pre-header {
-    display: flex; }
-  .menu-item-login-noshow,
-  .menu-item-shopping-noshow {
-    display: none; }
-  .carousel-item img {
-    height: 100vh; }
   .padre-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center; } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media (min-width: 1200px) {
-  .pre-header {
-    display: flex; }
-  .menu-item-login-noshow,
-  .menu-item-shopping-noshow {
-    display: none; }
-  .carousel-item img {
-    height: 120vh; }
   .padre-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center; } }
+    grid-template-columns: repeat(4, 1fr); } }
 
 .keyframe-textos {
   animation-name: parpadeo;
@@ -183,36 +160,33 @@ a {
   align-items: center;
   gap: 2rem; }
 
+.carousel-item img {
+  height: 240px; }
+
 @media (min-width: 768px) {
   .index-cards-principales-productos {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem; } }
+    gap: 2rem; }
+  .carousel-item img {
+    height: 70vh; } }
 
 @media (min-width: 992px) {
-  .index-cards-principales-productos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem; } }
+  .carousel-item img {
+    height: 100vh; } }
 
 @media (min-width: 1200px) {
-  .index-cards-principales-productos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem; } }
+  .carousel-item img {
+    height: 120vh; } }
 
 .body-examenvisual {
   background-color: white;
   color: black;
   font-family: "Montserrat", sans-serif; }
   .body-examenvisual .container-examenvisual {
-    --bs-gutter-x: 1.5rem;
+    --bs-gutter-x: $espacioGrande;
     --bs-gutter-y: 0;
     width: 100%;
     padding-right: 3rem;
@@ -237,7 +211,7 @@ a {
   font-family: "Montserrat", sans-serif; }
 
 .container-contactanos {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: $espacioGrande;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: 3rem;

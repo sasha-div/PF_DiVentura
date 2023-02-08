@@ -3,11 +3,11 @@
 }
 
 .container-contactanos {
-    --bs-gutter-x: 1.5rem;
+    --bs-gutter-x: $espacioGrande;
     --bs-gutter-y: 0;
     width: 100%;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: $espacioXGrande;
+    padding-left: $espacioXGrande;
     margin-right: auto;
     margin-left: auto;
 
@@ -28,7 +28,7 @@
         flex-wrap: wrap;
 
         img {
-            margin-top: 8rem;
+            margin-top: $espacioXXGrande + 3rem;
             display: $visible;
             width: 100%;
         }
@@ -38,7 +38,7 @@
 @media (min-width: $desktop) {
     .container-contactanos {
         img {
-            margin-top: 3rem;
+            margin-top: $espacioXGrande;
         }
     }
 }

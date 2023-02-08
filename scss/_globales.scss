@@ -90,18 +90,10 @@ a {
     --bs-btn-disabled-border-color: #30034e;
 }
 
-// Estilos CARRUSELES
-.carousel-item img {
-    height: 240px;
-}
-
 // Estilos compartidos para las CARDS y botones
 
 .padre-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-columna;
 
     .card {
         transition: all .5s;
@@ -140,7 +132,7 @@ a {
 }
 
 
-// MEDIA QUERIES
+// MEDIA QUERIES generales: Headers y cards
 
 @media (min-width: $tablet) {
     .pre-header {
@@ -152,61 +144,28 @@ a {
         display: $invisible;
     }
 
-    .carousel-item img {
-        height: 70vh;
-    }
-
     .padre-cards {
-        display: grid;
+        @include grid-center;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
     }
 }
 
 
 @media (min-width: $desktop) {
-    .pre-header {
-        display: $visible;
-    }
-
-    .menu-item-login-noshow,
-    .menu-item-shopping-noshow {
-        display: $invisible;
-    }
-
-    .carousel-item img {
-        height: 100vh;
-    }
-
     .padre-cards {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
     }
 }
 
 @media (min-width: $desktopXL) {
-    .pre-header {
-        display: $visible;
-    }
-
-    .menu-item-login-noshow,
-    .menu-item-shopping-noshow {
-        display: $invisible;
-    }
-
-    .carousel-item img {
-        height: 120vh;
-    }
-
     .padre-cards {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
     }
 }
 
-// Keyframes | Parpadeo
+
+// Keyframe | Parpadeo
+
 .keyframe-textos {
     animation-name: parpadeo;
     animation-iteration-count: infinite;
@@ -221,5 +180,4 @@ a {
     100% {
         opacity: 2;
     }
-
 }
