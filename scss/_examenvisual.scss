@@ -14,11 +14,10 @@
 
 @media (min-width: $tablet) {
     .container-examenvisual {
-        display: grid;
+        @include grid-center;
+        align-items: center;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
-        justify-items: center;
-        align-items: center;
 
         img {
             width: 100%;
