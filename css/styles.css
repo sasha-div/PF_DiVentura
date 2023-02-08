@@ -220,3 +220,27 @@ a {
   background-color: #740bba;
   color: white;
   margin: 3rem auto; }
+
+.container-contactanos {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-right: auto;
+  margin-left: auto; }
+  .container-contactanos img {
+    display: none; }
+
+@media (min-width: 768px) {
+  .container-contactanos {
+    display: flex;
+    flex-wrap: wrap; }
+    .container-contactanos img {
+      margin-top: 8rem;
+      display: flex;
+      width: 100%; } }
+
+@media (min-width: 992px) {
+  .container-contactanos img {
+    margin-top: 3rem; } }

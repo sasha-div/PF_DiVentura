@@ -7,3 +7,38 @@
     color: white;
     margin: $espacioXGrande auto;
 }
+
+.container-contactanos {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    img {
+        display: $invisible;
+    }
+}
+
+@media (min-width: $tablet) {
+    .container-contactanos {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            margin-top: 8rem;
+            display: $visible;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-contactanos {
+        img {
+            margin-top: 3rem;
+        }
+    }
+}
