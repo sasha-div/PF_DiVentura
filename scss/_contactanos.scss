@@ -1,11 +1,5 @@
-.contactanos {
+.body-contactanos {
     @include bg-white;
-}
-
-.banners-contactanos {
-    background-color: $color-primario;
-    color: white;
-    margin: $espacioXGrande auto;
 }
 
 .container-contactanos {
@@ -20,6 +14,12 @@
     img {
         display: $invisible;
     }
+}
+
+.banners-contactanos {
+    background-color: $color-primario;
+    color: white;
+    margin: $espacioXGrande auto;
 }
 
 @media (min-width: $tablet) {

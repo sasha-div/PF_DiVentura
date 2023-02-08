@@ -12,7 +12,7 @@ h1 {
   margin-top: 3rem;
   margin-bottom: 3rem;
   text-align: center;
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: bolder; }
 
 h2 {
@@ -20,7 +20,7 @@ h2 {
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
-  font-size: x-large;
+  font-size: 1.5rem;
   font-weight: bolder; }
 
 h5 {
@@ -28,7 +28,7 @@ h5 {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   text-align: center;
-  font-size: large;
+  font-size: 1.2rem;
   font-weight: bold; }
 
 img {
@@ -85,21 +85,22 @@ a {
     .padre-cards .card:hover {
       transform: scale(0.9);
       cursor: pointer; }
-  .padre-cards .btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #740bba;
-    --bs-btn-border-color: #740bba;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #510583;
-    --bs-btn-hover-border-color: #510583;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #740bba;
-    --bs-btn-active-border-color: #740bba;
-    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #30034e;
-    --bs-btn-disabled-border-color: #30034e; }
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #740bba;
+  --bs-btn-border-color: #740bba;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #510583;
+  --bs-btn-hover-border-color: #510583;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #740bba;
+  --bs-btn-active-border-color: #740bba;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #30034e;
+  --bs-btn-disabled-border-color: #30034e; }
 
 .logo-footer {
   width: 150px;
@@ -206,20 +207,34 @@ a {
     justify-content: center;
     gap: 2rem; } }
 
-.examenvisual {
+.body-examenvisual {
   background-color: white;
   color: black;
   font-family: "Montserrat", sans-serif; }
+  .body-examenvisual .container-examenvisual {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: auto;
+    margin-left: auto; }
 
-.contactanos {
+@media (min-width: 768px) {
+  .container-examenvisual {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center; }
+    .container-examenvisual img {
+      width: 100%;
+      height: 50%; } }
+
+.body-contactanos {
   background-color: white;
   color: black;
   font-family: "Montserrat", sans-serif; }
-
-.banners-contactanos {
-  background-color: #740bba;
-  color: white;
-  margin: 3rem auto; }
 
 .container-contactanos {
   --bs-gutter-x: 1.5rem;
@@ -231,6 +246,11 @@ a {
   margin-left: auto; }
   .container-contactanos img {
     display: none; }
+
+.banners-contactanos {
+  background-color: #740bba;
+  color: white;
+  margin: 3rem auto; }
 
 @media (min-width: 768px) {
   .container-contactanos {

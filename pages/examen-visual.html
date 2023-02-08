@@ -19,7 +19,7 @@
     <title>Exámenes visuales | Óptica Spectrum</title>
 </head>
 
-<body class="examenvisual">
+<body class="body-examenvisual">
     <header>
 
         <!-- Redes, buscador, login y shopping cart-->
@@ -89,13 +89,13 @@
 
     <h1>Examen visual</h1>
 
-    <main class="container row mx-auto">
+    <main class="container-examenvisual">
         <section class="col">
-            <img src="../img/examen-cover-2.png" class="w-100 rounded-5 mt-4" alt="Portada-exámenes">
+            <img src="../img/examen-cover-2.png" class="rounded-5" alt="Portada-exámenes">
         </section>
 
         <section class="col">
-            <h5 class="my-5 text-center text-wrap keyframe-textos">¡Agenda una cita para tus exámenes!</h5>
+            <h5 class="mt-5 mb-3 text-center text-wrap keyframe-textos">¡Agenda una cita para tus exámenes!</h5>
             <div class="cards-in-forms col-sm-10 p-3 mx-auto">
                 <div class="mb-2">
                     <form action="">
@@ -119,6 +119,40 @@
                     <input type="email" class="form-control" name="correo" id="correo"
                         placeholder="Ej. tucorreo@gmail.com" required>
                 </div>
+                <div class="border rounded p-2 mb-1">
+                    <p>Tipo de examen</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Toma de presión intraocular
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Fondo de ojos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Test de Snellen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Examen de refracción
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Otro
+                        </label>
+                    </div>
+                </div>
+
                 <div class="mb-2">
                     <label for="fecha">Fecha</label>
                     <input type="date" class="form-control" required>
