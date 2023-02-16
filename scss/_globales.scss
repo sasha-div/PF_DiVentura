@@ -4,7 +4,6 @@
 }
 
 body {
-    font-family: $fuentePrincipal;
     background-color: $color-terciario;
     color: black;
 }
@@ -14,26 +13,43 @@ h1 {
     margin-top: $espacioXGrande;
     margin-bottom: $espacioXGrande;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bolder;
 }
+
+// color: $color-primario;
+// font-family: 'Permanent Marker', cursive;
+// font-size: xx-large;
+
 
 h2 {
     font-family: $fuentePrincipal;
     padding-top: $espacioXGrande;
     padding-bottom: $espacioXGrande;
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: $fuentePrincipal;
+    text-align: center;
     font-size: 1.5rem;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 h5 {
     font-family: $fuentePrincipal;
-    padding-top: $espacioMedio;
-    padding-bottom: $espacioChico;
+    // padding-top: $espacioMedio;
+    // padding-bottom: $espacioChico;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
+}
+
+p {
+    font-family: $fuenteSecundaria;
+    font-size: 1rem;
 }
 
 img {

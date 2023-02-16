@@ -12,7 +12,8 @@
     <link rel="shortcut icon" href="img/favicon.PNG" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -89,19 +90,19 @@
             data-bs-ride="carousel">
             <div class="container carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/index-cover-1.webp" class="d-block w-80 mx-auto" alt="Portada 1 del index">
+                    <img src="img/index-cover-1.webp" class="d-block mx-auto" alt="Portada 1 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-2.webp" class="d-block w-80 mx-auto" alt="Portada 2 del index">
+                    <img src="img/index-cover-2.webp" class="d-block mx-auto" alt="Portada 2 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-3.webp" class="d-block w-80 mx-auto" alt="Portada 3 del index">
+                    <img src="img/index-cover-3.webp" class="d-block mx-auto" alt="Portada 3 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-4.webp" class="d-block w-80 mx-auto" alt="Portada 4 del index">
+                    <img src="img/index-cover-4.webp" class="d-block mx-auto" alt="Portada 4 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-5.webp" class="d-block w-80 mx-auto" alt="Portada 5 del index">
+                    <img src="img/index-cover-5.webp" class="d-block mx-auto" alt="Portada 5 del index">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -122,41 +123,37 @@
     <main>
         <section class="banners-secundarios word-wrap p-5">
             <h1>Óptica Spectrum</h1>
-            <p class="index-texto-descriptivo">Las mejores marcas y mejor calidad en <span class="strong-inicio">lentes
+            <p class="index-texto-descriptivo">¡Las mejores marcas y mejor calidad en <span class="strong-inicio">lentes
                     ópticos y de
-                    sol</span></p>
+                    sol!</span></p>
         </section>
 
         <hr class="index-texto-descriptivo-hr">
 
-        <!-- Cards para links directos a principales productos (lentes de sol, ópticos y accesorios) -->
 
-        <section class="container index-cards-principales-productos">
-            <div class="card text-center" style="width: 20rem;">
-                <a href="pages/lentes-de-sol.html">
-                    <img src="img/sol-codigolente-cover.webp" class="card-img-top" alt="Cover lentes de sol">
-                    <div class="card-body">
-                        <h5 class="card-text">SOL</h5>
-                </a>
+        <!-- CATÁLOGO -->
+
+        <div class="text-center">
+            <div class="contenedor-catalogo">
+                <div class="">
+                    <p class="portadas-catalogo-texto">Lentes de sol</p>
+                    <a href="pages/lentes-de-sol.html"><img class="portadas-catalogo" src="img/index-cover-sol.webp"
+                            alt="Portada catálogo para lentes de sol"></a>
+                </div>
+                <div class="">
+                    <p class="portadas-catalogo-texto">Lentes ópticos</p>
+                    <a href="pages/lentes-opticos.html"><img class="portadas-catalogo" src="img/index-cover-optico.webp"
+                            alt="Portada catálogo para lentes ópticos"></a>
+                </div>
+                <div class="">
+                    <p class="portadas-catalogo-texto">Accesorios</p>
+                    <a href="pages/accesorios.html"><img class="portadas-catalogo" src="img/index-cover-accesorios.webp"
+                            alt="Portada catálogo para accesorios"></a>
+                </div>
             </div>
-            </div>
-            <div class="card text-center" style="width: 20rem;">
-                <a href="pages/lentes-opticos.html">
-                    <img src="img/optico-codigolente-cover.webp" class="card-img-top" alt="Cover lentes ópticos">
-                    <div class="card-body">
-                        <h5 class="card-text">ÓPTICOS</h5>
-                </a>
-            </div>
-            </div>
-            <div class="card text-center" style="width: 20rem;">
-                <a href="pages/accesorios.html"><img src="img/accesorio-codigoaccesorio-cover.webp" class="card-img-top"
-                        alt="Cover accesorios">
-                    <div class="card-body">
-                        <h5 class="card-text">ACCESORIOS</h5>
-                </a>
-            </div>
-            </div>
-        </section>
+        </div>
+
+
     </main>
 
 
@@ -186,7 +183,7 @@
                     <a href="pages/lentes-de-sol.html"><img src="img/sol-codigolente7.webp"
                             class="img-fluid mx-auto d-block" alt="Nuevo producto sol-codigolente7"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="carousel-caption-nuevosproductos-white">Opposite</h5>
+                        <h3 class="carousel-caption-nuevosproductos-white">Opposite</h3>
                         <p class="carousel-caption-nuevosproductos-white">¡Protege tus ojos con
                             estilo! Completa tu look con estos lentes de sol.</p>
                     </div>
@@ -195,7 +192,7 @@
                     <a href="pages/lentes-de-sol.html"><img src="img/optico-codigolente7.webp" class="d-block w-100"
                             alt="Nuevo producto optico-codigolente7"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="carousel-caption-nuevosproductos-white">Retro metal</h5>
+                        <h3 class="carousel-caption-nuevosproductos-white">Retro metal</h3>
                         <p class="carousel-caption-nuevosproductos-white">Lentes ópticos de marco metálico, resistentes
                             y elegantes.</p>
                     </div>
@@ -204,7 +201,7 @@
                     <a href="pages/lentes-de-sol.html"><img src="img/sol-codigolente8.webp" class="d-block w-100"
                             alt="Nuevo producto sol-codigolente8"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="carousel-caption-nuevosproductos-white">Florescent</h5>
+                        <h3 class="carousel-caption-nuevosproductos-white">Florescent</h3>
                         <p class="carousel-caption-nuevosproductos-white">Descubre el estilo y la protección que
                             necesitas con nuestros lentes de sol modelo "SunShield".</p>
                     </div>

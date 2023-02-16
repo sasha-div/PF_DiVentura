@@ -19,7 +19,8 @@ $espacioXXGrande: 5rem;
 $espacioXXXGrande: 10rem;
 
 //Fuentes
-$fuentePrincipal: 'Montserrat', sans-serif;
+$fuentePrincipal: 'Permanent Marker', cursive;
+$fuenteSecundaria: 'Montserrat', sans-serif;
 
 // Visibilidad
 $visible: flex;
@@ -27,6 +28,7 @@ $invisible: none;
 
 
 // MIXINS
+
 @mixin flex-columna {
     display: flex;
     flex-direction: column;
@@ -45,10 +47,4 @@ $invisible: none;
 @mixin grid-center {
     display: grid;
     justify-items: center;
-}
-
-@mixin bg-white {
-    background-color: white;
-    color: black;
-    font-family: $fuentePrincipal;
 }
