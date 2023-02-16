@@ -26,15 +26,13 @@
 
         <div class="pre-header">
             <div class="container-fluid d-flex justify-content-between align-items-center text-bg-dark p-1">
-                <div>
-                    <a href="https://www.instagram.com/">
-                        <img src="img/contacto-instagram.svg" alt="logo-instagram" width="30" height="30"></a>
-                    <a href="https://twitter.com/"><img src="img/contacto-twitter.svg" alt="logo-twitter" width="30"
-                            height="30"></a>
-                    <a href="https://www.facebook.com/"><img src="img/contacto-facebook.svg" alt="logo-facebook"
-                            width="30" height="30"></a>
-                    <a href="https://www.linkedin.com/"><img src="img/contacto-linkedin.svg" alt="logo-linkedin"
-                            width="30" height="30"></a>
+                <div class="iconos-rrss-header">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div>
                     <span class="header-texto-promo keyframe-textos">¡Nuevas ofertas de verano!</span>
@@ -45,12 +43,9 @@
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
 
-                    <div class="shopping-cart ps-3"></div>
-                    <a href="#"><img src="img/icon-shopping.svg" alt="icono carrito de compras" width="30"
-                            height="30"></a>
-
-                    <div class="login">
-                        <a href="#"><img src="img/icon-user.svg" alt="icono login" width="30" height="30"></a>
+                    <div class="iconos-logshop-header">
+                        <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
 
                 </div>
@@ -92,21 +87,21 @@
     <section class="carrusel-index mt-5">
         <div id="carouselExampleControls" class="carousel slide carousel-fade carousel-dark w-100"
             data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="container carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/index-cover-1.jpg" class="d-block w-80 mx-auto" alt="Portada 1 del index">
+                    <img src="img/index-cover-1.webp" class="d-block w-80 mx-auto" alt="Portada 1 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-2.jpg" class="d-block w-80 mx-auto" alt="Portada 2 del index">
+                    <img src="img/index-cover-2.webp" class="d-block w-80 mx-auto" alt="Portada 2 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-3.jpg" class="d-block w-80 mx-auto" alt="Portada 3 del index">
+                    <img src="img/index-cover-3.webp" class="d-block w-80 mx-auto" alt="Portada 3 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-4.jpg" class="d-block w-80 mx-auto" alt="Portada 4 del index">
+                    <img src="img/index-cover-4.webp" class="d-block w-80 mx-auto" alt="Portada 4 del index">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/index-cover-5.jpg" class="d-block w-80 mx-auto" alt="Portada 5 del index">
+                    <img src="img/index-cover-5.webp" class="d-block w-80 mx-auto" alt="Portada 5 del index">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -125,7 +120,7 @@
     <!-- Texto descriptivo del index -->
 
     <main>
-        <section class="banners-inicio word-wrap p-5">
+        <section class="banners-secundarios word-wrap p-5">
             <h1>Óptica Spectrum</h1>
             <p class="index-texto-descriptivo">Las mejores marcas y mejor calidad en <span class="strong-inicio">lentes
                     ópticos y de
@@ -139,7 +134,7 @@
         <section class="container index-cards-principales-productos">
             <div class="card text-center" style="width: 20rem;">
                 <a href="pages/lentes-de-sol.html">
-                    <img src="img/sol-codigolente-cover.jpg" class="card-img-top" alt="Cover lentes de sol">
+                    <img src="img/sol-codigolente-cover.webp" class="card-img-top" alt="Cover lentes de sol">
                     <div class="card-body">
                         <h5 class="card-text">SOL</h5>
                 </a>
@@ -147,14 +142,14 @@
             </div>
             <div class="card text-center" style="width: 20rem;">
                 <a href="pages/lentes-opticos.html">
-                    <img src="img/optico-codigolente-cover.jpg" class="card-img-top" alt="Cover lentes ópticos">
+                    <img src="img/optico-codigolente-cover.webp" class="card-img-top" alt="Cover lentes ópticos">
                     <div class="card-body">
                         <h5 class="card-text">ÓPTICOS</h5>
                 </a>
             </div>
             </div>
             <div class="card text-center" style="width: 20rem;">
-                <a href="pages/accesorios.html"><img src="img/accesorio-codigoaccesorio-cover.jpg" class="card-img-top"
+                <a href="pages/accesorios.html"><img src="img/accesorio-codigoaccesorio-cover.webp" class="card-img-top"
                         alt="Cover accesorios">
                     <div class="card-body">
                         <h5 class="card-text">ACCESORIOS</h5>
@@ -167,21 +162,83 @@
 
     <hr class="index-texto-descriptivo-hr">
 
-    <!-- Texto descriptivo del index h1 -->
-    <section class="nuevos-productos">
 
-        <div class="banners-inicio word-wrap">
+    <!-- Carrusel para nuevos productos -->
+
+    <section>
+
+        <div class="banners-principales word-wrap">
             <h2>¡Nuevos productos!
             </h2>
         </div>
 
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="container carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <a href="pages/lentes-de-sol.html"><img src="img/sol-codigolente7.webp"
+                            class="img-fluid mx-auto d-block" alt="Nuevo producto sol-codigolente7"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-caption-nuevosproductos-white">Opposite</h5>
+                        <p class="carousel-caption-nuevosproductos-white">¡Protege tus ojos con
+                            estilo! Completa tu look con estos lentes de sol.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <a href="pages/lentes-de-sol.html"><img src="img/optico-codigolente7.webp" class="d-block w-100"
+                            alt="Nuevo producto optico-codigolente7"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-caption-nuevosproductos-white">Retro metal</h5>
+                        <p class="carousel-caption-nuevosproductos-white">Lentes ópticos de marco metálico, resistentes
+                            y elegantes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="pages/lentes-de-sol.html"><img src="img/sol-codigolente8.webp" class="d-block w-100"
+                            alt="Nuevo producto sol-codigolente8"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-caption-nuevosproductos-white">Florescent</h5>
+                        <p class="carousel-caption-nuevosproductos-white">Descubre el estilo y la protección que
+                            necesitas con nuestros lentes de sol modelo "SunShield".</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Atrás</span>
+                </button>
+            </div>
+            <div>
+            </div>
+    </section>
 
 
-        <!-- Cards para nuevos productos -->
+    <!-- Más vendidos -->
+
+    <section>
+        <div class="banners-principales word-wrap">
+            <h2>Los más vendidos
+            </h2>
+        </div>
+
+
+        <!-- Cards para los más vendidos -->
 
         <div class="padre-cards-index">
             <div class="cards-index">
-                <img src="img/sol-codigolente5.jpg" alt="Portada lentes de sol">
+                <img src="img/sol-codigolente5.webp" alt="Portada lentes de sol">
                 <div class="card-botones-index">
                     <a href="#" class="btn btn-carrito"><img src="img/icon-shopping-2.png" alt="Añadir al carrito"></a>
                     <a href="#" class="btn btn-favorito"><img src="img/icon-heart.png" alt="Añadir a favoritos"></a>
@@ -190,7 +247,7 @@
             </div>
 
             <div class="cards-index">
-                <img src="img/optico-codigolente2.jpg" alt="Portada lentes de sol">
+                <img src="img/optico-codigolente2.webp" alt="Portada lentes de sol">
                 <div class="card-botones-index">
                     <a href="#" class="btn btn-carrito"><img src="img/icon-shopping-2.png" alt="Añadir al carrito"></a>
                     <a href="#" class="btn btn-favorito"><img src="img/icon-heart.png" alt="Añadir a favoritos"></a>
@@ -199,7 +256,7 @@
             </div>
 
             <div class="cards-index">
-                <img src="img/accesorio-codigo6.jpg" alt="Portada lentes de sol">
+                <img src="img/accesorio-codigo6.webp" alt="Portada lentes de sol">
                 <div class="card-botones-index">
                     <a href="#" class="btn btn-carrito"><img src="img/icon-shopping-2.png" alt="Añadir al carrito"></a>
                     <a href="#" class="btn btn-favorito"><img src="img/icon-heart.png" alt="Añadir a favoritos"></a>
@@ -265,26 +322,26 @@
                     <h5>¡Contáctanos!</h5>
                     <ul class="list-unstyled text-center">
                         <li class="mb-2">
-                            <img src="img/contacto-correo.svg" alt="icono-correo" width="30" height="30">
+                            <i class="fa-regular fa-envelope"></i>
                             <a href="#">bla@gmail.com</a>
                         </li>
                         <li class="mb-2">
-                            <img src="img/contacto-whatsapp.svg" alt="icono-whatsapp" width="30" height="30">
+                            <i class="fa-brands fa-whatsapp"></i>
                             <span>+56 9 1122 3344</span>
                         </li>
                         <h6 class="pt-4">Síguenos en:</h6>
-                        <a href="https://www.instagram.com/">
-                            <img src="img/contacto-instagram.svg" alt="logo-instagram" width="30" height="30"></a>
-                        <a href="https://twitter.com/"><img src="img/contacto-twitter.svg" alt="logo-twitter" width="30"
-                                height="30"></a>
-                        <a href="https://www.facebook.com/"><img src="img/contacto-facebook.svg" alt="logo-facebook"
-                                width="30" height="30"></a>
-                        <a href="https://www.linkedin.com/"><img src="img/contacto-linkedin.svg" alt="logo-linkedin"
-                                width="30" height="30"></a>
-
+                        <div class="iconos-rrss-footer">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
                     </ul>
                 </div>
-
             </div>
         </div>
     </footer>
@@ -296,6 +353,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/2179471218.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

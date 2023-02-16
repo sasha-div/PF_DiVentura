@@ -46,6 +46,22 @@ a {
   .pre-header .header-texto-promo {
     font-size: small; }
 
+.iconos-rrss-header {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  color: white; }
+  .iconos-rrss-header a {
+    color: white; }
+
+.iconos-logshop-header {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+  color: white; }
+  .iconos-logshop-header a {
+    color: white; }
+
 .navbar {
   background-color: #F7EFE5; }
 
@@ -71,6 +87,16 @@ a {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #30034e;
   --bs-btn-disabled-border-color: #30034e; }
+
+.banners-principales {
+  background-color: #740bba;
+  color: white;
+  margin: 3rem auto; }
+
+.banners-secundarios {
+  background-color: #F7EFE5;
+  margin: 3rem auto;
+  color: black; }
 
 .padre-cards {
   display: flex;
@@ -103,6 +129,14 @@ a {
   width: 150px;
   height: 144px;
   padding-bottom: 1rem; }
+
+.iconos-rrss-footer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: black; }
+  .iconos-rrss-footer a {
+    color: #740bba; }
 
 @media (min-width: 768px) {
   .pre-header {
@@ -140,10 +174,6 @@ a {
   font-weight: lighter;
   text-align: center; }
 
-.banners-inicio {
-  background-color: #F7EFE5;
-  margin: 3rem auto; }
-
 .index-texto-descriptivo-hr {
   border: 1px solid black;
   border-radius: 5px;
@@ -159,6 +189,16 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 2rem; }
+
+.carousel-caption-nuevosproductos-white {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2px; }
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; }
 
 .padre-cards-index {
   display: flex;
@@ -186,26 +226,13 @@ a {
       transform: scale(1.5);
       cursor: pointer; }
 
-.carousel-item img {
-  height: 240px; }
-
 @media (min-width: 768px) {
   .index-cards-principales-productos {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem; }
-  .carousel-item img {
-    height: 70vh; } }
-
-@media (min-width: 992px) {
-  .carousel-item img {
-    height: 100vh; } }
-
-@media (min-width: 1200px) {
-  .carousel-item img {
-    height: 120vh; } }
+    gap: 2rem; } }
 
 .body-examenvisual {
   background-color: white;

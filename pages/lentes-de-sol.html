@@ -25,15 +25,13 @@
 
         <div class="pre-header">
             <div class="container-fluid d-flex justify-content-between align-items-center text-bg-dark p-1">
-                <div>
-                    <a href="https://www.instagram.com/">
-                        <img src="../img/contacto-instagram.svg" alt="logo-instagram" width="30" height="30"></a>
-                    <a href="https://twitter.com/"><img src="../img/contacto-twitter.svg" alt="logo-twitter" width="30"
-                            height="30"></a>
-                    <a href="https://www.facebook.com/"><img src="../img/contacto-facebook.svg" alt="logo-facebook"
-                            width="30" height="30"></a>
-                    <a href="https://www.linkedin.com/"><img src="../img/contacto-linkedin.svg" alt="logo-linkedin"
-                            width="30" height="30"></a>
+                <div class="iconos-rrss-header">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div>
                     <span class="header-texto-promo keyframe-textos">¡Nuevas ofertas de verano!</span>
@@ -44,12 +42,9 @@
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
 
-                    <div class="shopping-cart ps-3"></div>
-                    <a href="#"><img src="../img/icon-shopping.svg" alt="icono carrito de compras" width="30"
-                            height="30"></a>
-
-                    <div class="login">
-                        <a href="#"><img src="../img/icon-user.svg" alt="icono login" width="30" height="30"></a>
+                    <div class="iconos-logshop-header">
+                        <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
 
                 </div>
@@ -97,7 +92,7 @@
             <!-- CARD 1 -->
 
             <div class="card shadow-lg rounded-top-3" style="width: 18rem;">
-                <img src="../img/sol-codigolente1.jpg" class="card-img-top rounded-top-3" alt="Lente de sol modelo 1">
+                <img src="../img/sol-codigolente1.webp" class="card-img-top rounded-top-3" alt="Lente de sol modelo 1">
                 <div class="card-body">
                     <h5 class="card-title text-dark">Modelo 1</h5>
                     <p class="card-text">Uno de los mejores lentes del mercado.</p>
@@ -108,7 +103,7 @@
             <!-- CARD 2 -->
 
             <div class="card shadow-lg rounded-top-3" style="width: 18rem;">
-                <img src="../img/sol-codigolente2.jpg" class="card-img-top rounded-top-3" alt="Lente de sol modelo 2">
+                <img src="../img/sol-codigolente2.webp" class="card-img-top rounded-top-3" alt="Lente de sol modelo 2">
                 <div class="card-body">
                     <h5 class="card-title text-dark">Modelo 2</h5>
                     <p class="card-text">Uno de los mejores lentes del mercado.</p>
@@ -119,7 +114,7 @@
             <!-- CARD 3 -->
 
             <div class="card shadow-lg rounded-top-3" style="width: 18rem;">
-                <img src="../img/sol-codigolente3.jpg" class="card-img-top rounded-top-3" alt="Lente de sol modelo 3">
+                <img src="../img/sol-codigolente3.webp" class="card-img-top rounded-top-3" alt="Lente de sol modelo 3">
                 <div class="card-body">
                     <h5 class="card-title text-dark">Modelo 3</h5>
                     <p class="card-text">Uno de los mejores lentes del mercado.</p>
@@ -130,7 +125,7 @@
             <!-- CARD 4 -->
 
             <div class="card shadow-lg rounded-top-3" style="width: 18rem;">
-                <img src="../img/sol-codigolente4.jpg" class="card-img-top rounded-top-3" alt="Lente de sol modelo 4">
+                <img src="../img/sol-codigolente4.webp" class="card-img-top rounded-top-3" alt="Lente de sol modelo 4">
                 <div class="card-body">
                     <h5 class="card-title text-dark">Modelo 4</h5>
                     <p class="card-text">Uno de los mejores lentes del mercado.</p>
@@ -141,7 +136,7 @@
             <!-- CARD 5 -->
 
             <div class="card shadow-lg rounded-top-3" style="width: 18rem;">
-                <img src="../img/sol-codigolente5.jpg" class="card-img-top rounded-top-3" alt="Lente de sol modelo 5">
+                <img src="../img/sol-codigolente5.webp" class="card-img-top rounded-top-3" alt="Lente de sol modelo 5">
                 <div class="card-body">
                     <h5 class="card-title text-dark">Modelo 5</h5>
                     <p class="card-text">Uno de los mejores lentes del mercado.</p>
@@ -152,7 +147,7 @@
             <!-- CARD 6 -->
 
             <div class="card shadow-lg rounded-top-3" style="width: 18rem;">
-                <img src="../img/sol-codigolente6.jpg" class="card-img-top rounded-top-3" alt="Lente de sol modelo 6">
+                <img src="../img/sol-codigolente6.webp" class="card-img-top rounded-top-3" alt="Lente de sol modelo 6">
                 <div class="card-body">
                     <h5 class="card-title text-dark">Modelo 6</h5>
                     <p class="card-text">Uno de los mejores lentes del mercado.</p>
@@ -161,6 +156,7 @@
             </div>
         </section>
     </main>
+
 
 
 
@@ -219,22 +215,24 @@
                     <h5>¡Contáctanos!</h5>
                     <ul class="list-unstyled text-center">
                         <li class="mb-2">
-                            <img src="../img/contacto-correo.svg" alt="icono-correo" width="30" height="30">
+                            <i class="fa-regular fa-envelope"></i>
                             <a href="#">bla@gmail.com</a>
                         </li>
                         <li class="mb-2">
-                            <img src="../img/contacto-whatsapp.svg" alt="icono-whatsapp" width="30" height="30">
+                            <i class="fa-brands fa-whatsapp"></i>
                             <span>+56 9 1122 3344</span>
                         </li>
                         <h6 class="pt-4">Síguenos en:</h6>
-                        <a href="https://www.instagram.com/">
-                            <img src="../img/contacto-instagram.svg" alt="logo-instagram" width="30" height="30"></a>
-                        <a href="https://twitter.com/"><img src="../img/contacto-twitter.svg" alt="logo-twitter"
-                                width="30" height="30"></a>
-                        <a href="https://www.facebook.com/"><img src="../img/contacto-facebook.svg" alt="logo-facebook"
-                                width="30" height="30"></a>
-                        <a href="https://www.linkedin.com/"><img src="../img/contacto-linkedin.svg" alt="logo-linkedin"
-                                width="30" height="30"></a>
+                        <div class="iconos-rrss-footer">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
 
                     </ul>
                 </div>
@@ -250,6 +248,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/2179471218.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

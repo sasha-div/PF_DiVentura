@@ -1,13 +1,10 @@
+// MAIN: texto descriptivo + cards
+
 .index-texto-descriptivo {
     font-family: $fuentePrincipal;
     font-size: x-large;
     font-weight: lighter;
     text-align: center;
-}
-
-.banners-inicio {
-    background-color: $color-secundario;
-    margin: $espacioXGrande auto;
 }
 
 .index-texto-descriptivo-hr {
@@ -27,6 +24,21 @@
 }
 
 
+// NUEVOS PRODUCTOS: carrusel
+
+.carousel-caption-nuevosproductos-white {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+// LOS MÁS VENDIDOS: cards
 
 .padre-cards-index {
     display: flex;
@@ -74,28 +86,11 @@
     }
 }
 
-.carousel-item img {
-    height: 240px;
-}
+// MEDIAS
+
 
 @media (min-width: $tablet) {
     .index-cards-principales-productos {
         @include flex-fila;
-    }
-
-    .carousel-item img {
-        height: 70vh;
-    }
-}
-
-@media (min-width: $desktop) {
-    .carousel-item img {
-        height: 100vh;
-    }
-}
-
-@media (min-width: $desktopXL) {
-    .carousel-item img {
-        height: 120vh;
     }
 }

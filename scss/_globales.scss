@@ -59,6 +59,28 @@ a {
     }
 }
 
+.iconos-rrss-header {
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
+.iconos-logshop-header {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
 .navbar {
     background-color: $color-secundario;
 }
@@ -89,6 +111,23 @@ a {
     --bs-btn-disabled-bg: #30034e;
     --bs-btn-disabled-border-color: #30034e;
 }
+
+
+// Estilo para los banners de todas las páginas
+
+.banners-principales {
+    background-color: $color-primario;
+    color: white;
+    margin: $espacioXGrande auto;
+}
+
+.banners-secundarios {
+    background-color: $color-secundario;
+    margin: $espacioXGrande auto;
+    color: black;
+}
+
+
 
 // Estilos compartidos para las CARDS y botones
 
@@ -129,6 +168,17 @@ a {
     width: 150px;
     height: 144px;
     padding-bottom: $espacioMedio;
+}
+
+.iconos-rrss-footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: black;
+
+    a {
+        color: $color-primario;
+    }
 }
 
 
