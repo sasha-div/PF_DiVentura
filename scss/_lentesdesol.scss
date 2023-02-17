@@ -1,1 +1,31 @@
-// Sin contenido aún
+.contenedor-lentesdesol-1 {
+    @include flex-columna;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    width: 50vw;
+    height: 60vh;
+    background-color: $color-primario;
+}
+
+.lentesdesol1-texto-descriptivo {
+    color: white;
+    font-family: $fuenteSecundaria;
+    font-size: 0.95rem;
+    font-weight: normal;
+}
+
+.contenedor-lentesdesol-2 {
+    display: flex;
+    width: 50vw;
+    height: 60vh;
+    background-image: url("../img/sol-cover.webp");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@media (min-width: $tablet) {
+    .lentesdesol1-texto-descriptivo {
+        font-size: 1.8rem;
+    }
+}

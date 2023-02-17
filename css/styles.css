@@ -132,6 +132,9 @@ a {
   --bs-btn-disabled-bg: #30034e;
   --bs-btn-disabled-border-color: #30034e; }
 
+.fuenteprincipal {
+  font-family: "Permanent Marker", cursive; }
+
 .logo-footer {
   width: 150px;
   height: 144px;
@@ -263,6 +266,64 @@ a {
     .padre-cards-index .btn-carrito img:hover, .padre-cards-index .btn-favorito img:hover, .padre-cards-index .btn-moreinfo img:hover {
       transform: scale(1.5);
       cursor: pointer; }
+
+.contenedor-lentesdesol-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  width: 50vw;
+  height: 60vh;
+  background-color: #740bba; }
+
+.lentesdesol1-texto-descriptivo {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: normal; }
+
+.contenedor-lentesdesol-2 {
+  display: flex;
+  width: 50vw;
+  height: 60vh;
+  background-image: url("../img/sol-cover.webp");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+@media (min-width: 768px) {
+  .lentesdesol1-texto-descriptivo {
+    font-size: 1.8rem; } }
+
+.contenedor-lentesopticos-1 {
+  display: flex;
+  width: 50vw;
+  height: 60vh;
+  background-image: url("../img/optico-cover.webp");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.contenedor-lentesopticos-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+  width: 50vw;
+  height: 60vh;
+  background-color: #F7EFE5; }
+
+.lentesopticos2-texto-descriptivo {
+  color: #740bba;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: normal; }
+
+@media (min-width: 768px) {
+  .lentesopticos2-texto-descriptivo {
+    font-size: 1.8rem; } }
 
 .body-examenvisual {
   background-color: white; }

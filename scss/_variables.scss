@@ -33,7 +33,6 @@ $invisible: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
 @mixin flex-fila {
@@ -41,7 +40,6 @@ $invisible: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
 }
 
 @mixin grid-center {

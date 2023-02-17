@@ -17,11 +17,6 @@ h1 {
     font-weight: bolder;
 }
 
-// color: $color-primario;
-// font-family: 'Permanent Marker', cursive;
-// font-size: xx-large;
-
-
 h2 {
     font-family: $fuentePrincipal;
     padding-top: $espacioXGrande;
@@ -40,8 +35,6 @@ h3 {
 
 h5 {
     font-family: $fuentePrincipal;
-    // padding-top: $espacioMedio;
-    // padding-bottom: $espacioChico;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
@@ -65,7 +58,9 @@ a {
     text-decoration: none;
 }
 
+
 // Estilos para el HEADER
+
 
 .pre-header {
     display: $invisible;
@@ -129,6 +124,7 @@ a {
 }
 
 
+
 // Estilo para los banners de todas las páginas
 
 .banners-principales {
@@ -145,10 +141,11 @@ a {
 
 
 
-// Estilos compartidos para las CARDS y botones
+// Estilos compartidos para Lentes de sol, Ópticos y Accesorios
 
 .padre-cards {
     @include flex-columna;
+    gap: 2rem;
 
     .card {
         transition: all .5s;
@@ -177,6 +174,10 @@ a {
     --bs-btn-disabled-border-color: #30034e;
 }
 
+.fuenteprincipal {
+    font-family: $fuentePrincipal;
+}
+
 
 // Estilos para el FOOTER
 
@@ -198,7 +199,7 @@ a {
 }
 
 
-// MEDIA QUERIES generales: Headers y cards
+// MEDIA QUERIES generales: Headers y cards de las páginas Lentes de sol, Ópticos y Accesorios.
 
 @media (min-width: $tablet) {
     .pre-header {

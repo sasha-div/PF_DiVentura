@@ -1,1 +1,32 @@
-// Sin contenido aún
+.contenedor-lentesopticos-1 {
+    display: flex;
+    width: 50vw;
+    height: 60vh;
+    background-image: url("../img/optico-cover.webp");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.contenedor-lentesopticos-2 {
+    @include flex-columna;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+    width: 50vw;
+    height: 60vh;
+    background-color: $color-secundario;
+}
+
+.lentesopticos2-texto-descriptivo {
+    color: $color-primario;
+    font-family: $fuenteSecundaria;
+    font-size: 0.95rem;
+    font-weight: normal;
+}
+
+@media (min-width: $tablet) {
+    .lentesopticos2-texto-descriptivo {
+        font-size: 1.8rem;
+    }
+}
