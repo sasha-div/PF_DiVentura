@@ -111,10 +111,43 @@ a {
   align-items: center;
   gap: 2rem; }
   .padre-cards .card {
+    height: 25.6rem; }
+
+.card-text-price {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.02); }
+
+.btn-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  gap: 10px; }
+  .btn-productos .btn-shop-fav {
+    color: #740bba;
+    background-color: rgba(0, 0, 0, 0.125);
+    padding: 6px;
+    border-radius: 20px;
     transition: all .5s; }
-    .padre-cards .card:hover {
-      transform: scale(0.9);
+    .btn-productos .btn-shop-fav:hover {
+      transform: scale(1.3);
       cursor: pointer; }
+
+.nuevos-productos {
+  position: absolute;
+  top: -5px;
+  right: -5px; }
+  .nuevos-productos p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px; }
 
 .btn-primary {
   --bs-btn-color: #fff;
