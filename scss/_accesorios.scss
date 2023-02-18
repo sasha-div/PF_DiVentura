@@ -1,1 +1,30 @@
-// Sin contenido aún
+.contenedor-accesorios {
+    @include flex-fila;
+
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.contenedor-accesorios-texto {
+    @include flex-columna;
+    justify-content: center;
+    background-color: $color-primario;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 48px;
+
+    p {
+        color: white;
+        font-family: $fuenteSecundaria;
+        font-size: 0.95rem;
+        font-weight: normal;
+    }
+}
+
+@media (min-width: $tablet) {
+    .contenedor-accesorios-texto p {
+        font-size: 1.8rem;
+    }
+}

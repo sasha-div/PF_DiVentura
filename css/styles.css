@@ -95,6 +95,13 @@ a {
   --bs-btn-disabled-bg: #30034e;
   --bs-btn-disabled-border-color: #30034e; }
 
+@media (min-width: 768px) {
+  .pre-header {
+    display: flex; }
+  .menu-item-login-noshow,
+  .menu-item-shopping-noshow {
+    display: none; } }
+
 .banners-principales {
   background-color: #740bba;
   color: white;
@@ -168,25 +175,7 @@ a {
 .fuenteprincipal {
   font-family: "Permanent Marker", cursive; }
 
-.logo-footer {
-  width: 150px;
-  height: 144px;
-  padding-bottom: 1rem; }
-
-.iconos-rrss-footer {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  color: black; }
-  .iconos-rrss-footer a {
-    color: #740bba; }
-
 @media (min-width: 768px) {
-  .pre-header {
-    display: flex; }
-  .menu-item-login-noshow,
-  .menu-item-shopping-noshow {
-    display: none; }
   .padre-cards {
     display: grid;
     justify-items: center;
@@ -210,6 +199,19 @@ a {
     opacity: 0%; }
   100% {
     opacity: 2; } }
+
+.logo-footer {
+  width: 150px;
+  height: 144px;
+  padding-bottom: 1rem; }
+
+.iconos-rrss-footer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: black; }
+  .iconos-rrss-footer a {
+    color: #740bba; }
 
 .index-texto-descriptivo {
   font-family: "Montserrat", sans-serif;
@@ -321,9 +323,9 @@ a {
   display: flex;
   width: 50vw;
   height: 60vh;
-  background-image: url("../img/sol-cover.webp");
   background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  background-image: url("../img/sol-cover.webp"); }
 
 @media (min-width: 768px) {
   .lentesdesol1-texto-descriptivo {
@@ -333,9 +335,9 @@ a {
   display: flex;
   width: 50vw;
   height: 60vh;
-  background-image: url("../img/optico-cover.webp");
   background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  background-image: url("../img/optico-cover.webp"); }
 
 .contenedor-lentesopticos-2 {
   display: flex;
@@ -356,6 +358,34 @@ a {
 
 @media (min-width: 768px) {
   .lentesopticos2-texto-descriptivo {
+    font-size: 1.8rem; } }
+
+.contenedor-accesorios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .contenedor-accesorios img {
+    width: 50%;
+    height: 50%; }
+
+.contenedor-accesorios-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #740bba;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 48px; }
+  .contenedor-accesorios-texto p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    font-weight: normal; }
+
+@media (min-width: 768px) {
+  .contenedor-accesorios-texto p {
     font-size: 1.8rem; } }
 
 .body-examenvisual {

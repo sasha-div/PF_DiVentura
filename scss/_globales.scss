@@ -6,8 +6,6 @@
 body {
     background-color: $color-terciario;
     color: black;
-    // margin-left: 150px;
-    // margin-right: 150px;
 }
 
 h1 {
@@ -61,8 +59,8 @@ a {
 }
 
 
-// Estilos para el HEADER
 
+// HEADER
 
 .pre-header {
     display: $invisible;
@@ -125,9 +123,20 @@ a {
     --bs-btn-disabled-border-color: #30034e;
 }
 
+@media (min-width: $tablet) {
+    .pre-header {
+        display: $visible;
+    }
+
+    .menu-item-login-noshow,
+    .menu-item-shopping-noshow {
+        display: $invisible;
+    }
+}
 
 
-// Estilo para los banners de todas las páginas
+
+// BANNERS
 
 .banners-principales {
     background-color: $color-primario;
@@ -143,20 +152,14 @@ a {
 
 
 
-// Estilos compartidos para Lentes de sol, Ópticos y Accesorios
+// CARDS: Lentes de sol, Ópticos y Accesorios
 
 .padre-cards {
     @include flex-columna;
     gap: 2rem;
 
     .card {
-        // transition: all .5s;
         height: 25.6rem;
-
-        // &:hover {
-        //     transform: scale(0.9);
-        //     cursor: pointer;
-        // }
     }
 }
 
@@ -207,8 +210,6 @@ a {
     }
 }
 
-
-
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #740bba;
@@ -230,39 +231,7 @@ a {
     font-family: $fuentePrincipal;
 }
 
-
-// Estilos para el FOOTER
-
-.logo-footer {
-    width: 150px;
-    height: 144px;
-    padding-bottom: $espacioMedio;
-}
-
-.iconos-rrss-footer {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    color: black;
-
-    a {
-        color: $color-primario;
-    }
-}
-
-
-// MEDIA QUERIES generales: Headers y cards de las páginas Lentes de sol, Ópticos y Accesorios.
-
 @media (min-width: $tablet) {
-    .pre-header {
-        display: $visible;
-    }
-
-    .menu-item-login-noshow,
-    .menu-item-shopping-noshow {
-        display: $invisible;
-    }
-
     .padre-cards {
         @include grid-center;
         grid-template-columns: repeat(2, 1fr);
@@ -283,7 +252,8 @@ a {
 }
 
 
-// Keyframe | Parpadeo
+
+// Keyframes | Parpadeo
 
 .keyframe-textos {
     animation-name: parpadeo;
@@ -298,5 +268,26 @@ a {
 
     100% {
         opacity: 2;
+    }
+}
+
+
+
+// FOOTER
+
+.logo-footer {
+    width: 150px;
+    height: 144px;
+    padding-bottom: $espacioMedio;
+}
+
+.iconos-rrss-footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: black;
+
+    a {
+        color: $color-primario;
     }
 }

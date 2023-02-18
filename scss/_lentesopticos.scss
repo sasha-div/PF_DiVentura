@@ -1,10 +1,6 @@
 .contenedor-lentesopticos-1 {
-    display: flex;
-    width: 50vw;
-    height: 60vh;
+    @include contenedor-lentes;
     background-image: url("../img/optico-cover.webp");
-    background-size: cover;
-    background-position: 50% 50%;
 }
 
 
