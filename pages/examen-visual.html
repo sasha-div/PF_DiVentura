@@ -85,27 +85,112 @@
 
     <h1>Examen visual</h1>
 
+    <!-- Portada y texto descriptivo -->
 
-
-    <section>
+    <section class="d-flex justify-content-center mb-5">
         <div class="contenedor-examenvisual">
-            <img src="../img/examen-cover.webp" alt="Portada de Examen visual">
+            <div>
+                <img src="../img/examen-cover.webp" alt="Portada de Examen visual">
+            </div>
             <div class="contenedor-examenvisual-texto">
                 <h2>-50%</h2>
-                <p>En exámenes visuales</p>
+                <p>En exámenes visuales.</p>
                 <p>¡Aprovecha y realiza todos tus exámenes visuales a mitad de precio!</p>
-
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero facilis similique quae dolor
-                    consectetur consequuntur aliquid, nisi laudantium iusto. Et ut nisi numquam itaque eaque repellendus
-                    dolores error, in esse?</p>
+            <div class="contenedor-examenvisual-texto">
+                <h2>¿Sabías que...</h2>
+                <p>Ahora puedes pedir tus citas por nuestra página web o por WhatsApp?</p>
             </div>
             <div>
                 <img src="../img/examen-cover-2.webp" alt="Segunda portada de Examen visual">
             </div>
         </div>
     </section>
+
+    <main>
+        <section>
+            <div class="banners-secundarios word-wrap">
+                <h2>¡Agenda tu cita como prefieras!
+                </h2>
+            </div>
+
+            <div class="contenedor-examenvisual-agenda">
+                <p>A través de WhatsApp</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +56 9 1122 3344</p>
+            </div>
+
+            <h5 class="mt-5 mb-3 text-center text-wrap keyframe-textos">¡Agenda una cita para tus exámenes!</h5>
+            <div class="cards-in-forms col-sm-10 p-3 mx-auto">
+                <div class="mb-2">
+                    <form action="">
+                        <div class="mb-2">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ej. Pedro"
+                                required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido"
+                                placeholder="Ej. Pérez" required>
+                        </div>
+                </div>
+                <div class="mb-2">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="56 9 1122 3344">
+                </div>
+                <div class="mb-2">
+                    <label for="correo">Correo</label>
+                    <input type="email" class="form-control" name="correo" id="correo"
+                        placeholder="Ej. tucorreo@gmail.com" required>
+                </div>
+                <div class="border rounded p-2 mb-1">
+                    <p>Tipo de examen</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Toma de presión intraocular
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Fondo de ojos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Test de Snellen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Examen de refracción
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Otro
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+                </form>
+            </div>
+
+
+
+        </section>
+    </main>
 
 
 
