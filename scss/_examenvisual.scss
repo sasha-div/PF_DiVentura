@@ -10,7 +10,6 @@
         height: 100%;
         object-fit: cover;
     }
-
 }
 
 .contenedor-examenvisual-texto {
@@ -50,6 +49,56 @@
         border-radius: 20px;
     }
 }
+
+
+
+// MEDIA QUERIES
+
+@media (min-width: $tablet) {
+    .contenedor-examenvisual {
+        width: 600px;
+    }
+
+    .contenedor-examenvisual-texto {
+        padding-right: 20px;
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+
+@media (min-width: $desktop) {
+    .contenedor-examenvisual {
+        width: 800px;
+    }
+
+    .contenedor-examenvisual-texto {
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .contenedor-examenvisual-formulario {
+        width: 800px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
 
 
 

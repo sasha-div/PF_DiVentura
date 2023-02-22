@@ -428,6 +428,27 @@ a {
     padding: 5px;
     border-radius: 20px; }
 
+@media (min-width: 768px) {
+  .contenedor-examenvisual {
+    width: 600px; }
+  .contenedor-examenvisual-texto {
+    padding-right: 20px; }
+    .contenedor-examenvisual-texto h2 {
+      font-size: 3.5rem; }
+    .contenedor-examenvisual-texto p {
+      font-size: 1.3rem; } }
+
+@media (min-width: 992px) {
+  .contenedor-examenvisual {
+    width: 800px; }
+  .contenedor-examenvisual-texto h2 {
+    font-size: 4rem; }
+  .contenedor-examenvisual-texto p {
+    font-size: 1.5rem; }
+  .contenedor-examenvisual-formulario {
+    width: 800px;
+    margin: auto; } }
+
 .body-examenvisual {
   background-color: white; }
   .body-examenvisual .container-examenvisual {
@@ -452,6 +473,8 @@ a {
 
 .body-contactanos {
   background-color: white; }
+  .body-contactanos h1 {
+    font-size: 2.7rem; }
 
 .container-contactanos {
   --bs-gutter-x: $espacioGrande;
@@ -467,16 +490,25 @@ a {
 .banners-contactanos {
   background-color: #740bba;
   color: white;
-  margin: 3rem auto; }
+  margin: 120px auto; }
 
 @media (min-width: 768px) {
   .container-contactanos {
     display: flex; }
     .container-contactanos img {
-      margin-top: 8rem;
+      margin-top: 5rem;
       display: flex;
-      width: 100%; } }
+      width: 800px;
+      height: 500px; } }
 
 @media (min-width: 992px) {
+  .body-contactanos h1 {
+    font-size: 3rem; }
   .container-contactanos img {
-    margin-top: 3rem; } }
+    width: 900px;
+    height: 600px; } }
+
+@media (min-width: 1200px) {
+  .container-contactanos img {
+    width: 1000px;
+    height: 700px; } }

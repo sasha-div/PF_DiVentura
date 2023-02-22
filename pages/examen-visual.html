@@ -36,7 +36,7 @@
                     <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div>
-                    <span class="header-texto-promo">¡Nuevas ofertas de verano!</span>
+                    <span class="header-texto-promo keyframe-textos">¡Nuevas ofertas de verano!</span>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <form class="d-flex justify-content-end" role="search">
@@ -110,18 +110,17 @@
     <main>
         <section>
             <div class="banners-secundarios word-wrap">
-                <h2>¡Agenda tu cita como prefieras!
+                <h2 class="keyframe-textos">¡Agenda tu cita como prefieras!
                 </h2>
             </div>
 
             <div class="contenedor-examenvisual-agenda">
-                <p>A través de WhatsApp</p>
+                <p>A través de nuestro <span class="fuenteprincipal">WhatsApp</span></p>
                 <p><i class="fa-brands fa-whatsapp"></i> +56 9 1122 3344</p>
+                <p class="mt-5 mb-3">O llenando este corto <span class="fuenteprincipal">formulario</span></p>
             </div>
-
-            <h5 class="mt-5 mb-3 text-center text-wrap keyframe-textos">¡Agenda una cita para tus exámenes!</h5>
-            <div class="cards-in-forms col-sm-10 p-3 mx-auto">
-                <div class="mb-2">
+            <div class="contenedor-examenvisual-formulario">
+                <div class="cards-in-forms col-sm-10 p-3 mx-auto">
                     <form action="">
                         <div class="mb-2">
                             <label for="nombre">Nombre</label>
@@ -133,150 +132,62 @@
                             <input type="text" class="form-control" name="apellido" id="apellido"
                                 placeholder="Ej. Pérez" required>
                         </div>
-                </div>
-                <div class="mb-2">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="56 9 1122 3344">
-                </div>
-                <div class="mb-2">
-                    <label for="correo">Correo</label>
-                    <input type="email" class="form-control" name="correo" id="correo"
-                        placeholder="Ej. tucorreo@gmail.com" required>
-                </div>
-                <div class="border rounded p-2 mb-1">
-                    <p>Tipo de examen</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Toma de presión intraocular
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Fondo de ojos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Test de Snellen
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Examen de refracción
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Otro
-                        </label>
-                    </div>
-                </div>
+                        <div class="mb-2">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" class="form-control" name="telefono" id="telefono"
+                                placeholder="56 9 1122 3344">
+                        </div>
+                        <div class="mb-2">
+                            <label for="correo">Correo</label>
+                            <input type="email" class="form-control" name="correo" id="correo"
+                                placeholder="Ej. tucorreo@gmail.com" required>
+                        </div>
+                        <div class="border rounded p-2 mb-1">
+                            <p>Tipo de examen</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Toma de presión intraocular
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                    Fondo de ojos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                <label class="form-check-label" for="defaultCheck3">
+                                    Test de Snellen
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                <label class="form-check-label" for="defaultCheck4">
+                                    Examen de refracción
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                <label class="form-check-label" for="defaultCheck5">
+                                    Otro
+                                </label>
+                            </div>
+                        </div>
 
-                <div class="mb-2">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" class="form-control" required>
+                        <div class="mb-2">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="mb-2">
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="mb-2">
-                    <button class="btn btn-primary">Enviar</button>
-                </div>
-                </form>
             </div>
-
-
-
         </section>
     </main>
-
-
-
-
-
-
-
-
-
-
-    <!-- <main class="container-examenvisual">
-        <section class="col">
-            <img src="../img/examen-cover-2.png" class="rounded-5" alt="Portada-exámenes">
-        </section>
-
-        <section class="col">
-            <h5 class="mt-5 mb-3 text-center text-wrap keyframe-textos">¡Agenda una cita para tus exámenes!</h5>
-            <div class="cards-in-forms col-sm-10 p-3 mx-auto">
-                <div class="mb-2">
-                    <form action="">
-                        <div class="mb-2">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ej. Pedro"
-                                required>
-                        </div>
-                        <div class="mb-2">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" class="form-control" name="apellido" id="apellido"
-                                placeholder="Ej. Pérez" required>
-                        </div>
-                </div>
-                <div class="mb-2">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="56 9 1122 3344">
-                </div>
-                <div class="mb-2">
-                    <label for="correo">Correo</label>
-                    <input type="email" class="form-control" name="correo" id="correo"
-                        placeholder="Ej. tucorreo@gmail.com" required>
-                </div>
-                <div class="border rounded p-2 mb-1">
-                    <p>Tipo de examen</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Toma de presión intraocular
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Fondo de ojos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Test de Snellen
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Examen de refracción
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Otro
-                        </label>
-                    </div>
-                </div>
-
-                <div class="mb-2">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" class="form-control" required>
-                </div>
-                <div class="mb-2">
-                    <button class="btn btn-primary">Enviar</button>
-                </div>
-                </form>
-            </div>
-        </section>
-    </main> -->
-
 
 
 

@@ -1,5 +1,9 @@
 .body-contactanos {
     background-color: white;
+
+    h1 {
+        font-size: 2.7rem;
+    }
 }
 
 .container-contactanos {
@@ -19,7 +23,7 @@
 .banners-contactanos {
     background-color: $color-primario;
     color: white;
-    margin: $espacioXGrande auto;
+    margin: 120px auto;
 }
 
 @media (min-width: $tablet) {
@@ -27,17 +31,34 @@
         display: flex;
 
         img {
-            margin-top: $espacioXXGrande + 3rem;
+            margin-top: $espacioXXGrande;
             display: $visible;
-            width: 100%;
+            width: 800px;
+            height: 500px;
         }
     }
 }
 
 @media (min-width: $desktop) {
+    .body-contactanos {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
     .container-contactanos {
         img {
-            margin-top: $espacioXGrande;
+            width: 900px;
+            height: 600px;
+        }
+    }
+}
+
+@media (min-width: $desktopXL) {
+    .container-contactanos {
+        img {
+            width: 1000px;
+            height: 700px;
         }
     }
 }
