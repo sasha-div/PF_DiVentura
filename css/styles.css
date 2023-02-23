@@ -478,19 +478,11 @@ a {
   .container-contactanos {
     display: flex; }
     .container-contactanos img {
-      margin-top: 5rem;
       display: flex;
-      width: 800px;
-      height: 500px; } }
+      margin-top: 5rem;
+      width: 90%;
+      height: 90%; } }
 
 @media (min-width: 992px) {
   .body-contactanos h1 {
-    font-size: 3rem; }
-  .container-contactanos img {
-    width: 900px;
-    height: 600px; } }
-
-@media (min-width: 1200px) {
-  .container-contactanos img {
-    width: 1000px;
-    height: 700px; } }
+    font-size: 3rem; } }
