@@ -4,6 +4,7 @@
 
 body {
   background-color: #FFFBF5;
+  word-wrap: break-word;
   color: black; }
 
 h1 {
